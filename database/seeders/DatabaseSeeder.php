@@ -32,5 +32,13 @@ class DatabaseSeeder extends Seeder
             'level' => 'petugas'
         ]);
 
+        \App\Models\User::create([
+            'name' => 'Administrator',
+            'username' => 'Hollow',
+            'email' => 'hollowdream@gmail.com',
+            'password' => Hash::make('aqila123'),
+            'level' => 'admin'
+        ]);
+
     }
 }

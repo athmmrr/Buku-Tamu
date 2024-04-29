@@ -9,7 +9,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('/frontend/images/bg-5.jpg');
+    background-image: url('/frontend/images/bg-8.jpg');
     color: #333;
 }
 
@@ -74,7 +74,7 @@ body {
     width: 100%;
     display: block;
     text-align: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.2s ease;
 }
 
 .submit:hover {
@@ -89,7 +89,7 @@ body {
 a {
     color: #740F0F;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 a:hover {

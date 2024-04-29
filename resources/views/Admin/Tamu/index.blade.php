@@ -8,12 +8,12 @@
 					@endif
     <div class="card-header">
         Data Buku Tamu  <a href="{{url('admin/form-tambah')}}" class="btn btn-success">Tambah Data</a>
-    </div>
+    </div> 
     <div class="card-body">
     <table class="table" id="myTable">
   <thead class="thead-dark">
     <tr>
-      <th scope="col">#</th>
+      <th scope="col">No.</th>
       <th scope="col">Nama</th>
       <th scope="col">No.Telp</th>
       <th scope="col">E-mail</th>

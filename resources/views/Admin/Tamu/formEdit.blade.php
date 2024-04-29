@@ -37,7 +37,7 @@
             </form>
         </div>
         <div class="card-footer text-body-secondary">
-            2 days ago
+            2 days ago 
         </div>
         </div>
     </div>

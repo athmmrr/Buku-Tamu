@@ -2,7 +2,7 @@
 @section('content')
 
     <div class="d-flex justify-content-center">...</div>
-            <div class="card" >
+            <div class="card" > 
         <div class="card-header">
             Form Tambah Buku Tamu
         </div>

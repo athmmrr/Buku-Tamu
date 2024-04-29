@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
-	<link rel="stylesheet" href="frontend/css/style.css">
+	<link rel="stylesheet" href="frontend/css/second.css">
 
 	</head>
 	<body>
@@ -19,7 +19,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-12 col-lg-10">
 					<div class="wrap d-md-flex">
-						<div class="img" style="background-image: url({{url('/frontend/images/bg-3.png')}});">
+						<div class="img" style="background-image: url({{url('/frontend/images/bg-8.jpg')}});">
 			      </div>
 						<div class="login-wrap p-4 p-md-5">
 			      	<div class="d-flex">
@@ -36,11 +36,19 @@
 							@csrf
 			      		<div class="form-group mb-3">
 			      			<label class="label" for="name">Nama</label>
-			      			<input type="text" name="nama" class="form-control" placeholder="Silahkan Isi Nama Anda" required>
+			      			<input type="text" name="nama" onkeypress="return hanyaHuruf(event);" class="form-control" placeholder="Silahkan Isi Nama Anda" required>
+						<script type="text/javascript">
+						 function hanyaHuruf(evt) {
+							var charCode = (evt.which) ? evt.which : event.keyCode 
+						 if (charCode > 31 &&  (charCode < 48 || charCode > 57))	
+							return true;
+							return false;
+						 }
+						 </script>
 			      		</div>
 		            <div class="form-group mb-3">
 		            	<label class="label" for="password">No.Telp</label>
-		              <input type="text" name="tlp" class="form-control" placeholder="Silahkan Isi Nomor Telp Anda" required>
+		              <input type="number" name="tlp" class="form-control" placeholder="Silahkan Isi Nomor Telp Anda" required>
 		            </div>
 					<div class="form-group mb-3">
 		            	<label class="label" for="password">Email</label>
